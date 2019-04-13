@@ -1,0 +1,12 @@
+CPU Runtime with respect to depth with empty board start
+Reading were taken on Omega
+
+Depth  CPU Time
+1      0m0.016s
+2      0m0.029s
+3      0m0.065s
+4      0m0.235s
+5      0m0.773s
+6      0m3.985s
+7      0m14.316s
+8      1m46.843s

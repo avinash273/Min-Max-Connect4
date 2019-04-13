@@ -1,0 +1,17 @@
+Explanation of Eval function of my code:
+
+My eval function computes the utility value based on the depth provided as input. It takes these steps.
+
+1. Taking the game state, my functions assigns weight to each grouping based on how close its to build a continous 4.
+2. In horizontal, vertical or diagonal pattern if the there are 4 in row (1111) it assign a weight of 1
+3. In horizontal, vertical or diagonal pattern if the there are 3 in row (111) it assign a weight of 0.60
+4. In horizontal, vertical or diagonal pattern if the there are 2 in row (11) it assign a weight of 0.20
+5. For three occurences (111) and an empty space diagonally it increases the value by 0.50
+6. Eval function assigns a positive values and negative for the other player turn.
+7. The eval function then takes the sum all the values and returns this based on which decision is made.
+
+Sample:
+In player1 turn, if player1 has 3 occurences of 1 horizontal and 3 occurences  of 1 diagonally.
+And Player2 has 1 occurences of (11).
+
+Then unitity is (0.60 + 0.50) - 0.20 = 0.90
